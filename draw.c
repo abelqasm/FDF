@@ -6,7 +6,7 @@
 /*   By: abelqasm <abelqasm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 20:08:50 by abelqasm          #+#    #+#             */
-/*   Updated: 2022/02/12 22:28:46 by abelqasm         ###   ########.fr       */
+/*   Updated: 2022/03/08 22:45:31 by abelqasm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ static void	ft_string_put(t_data *data)
 	mlx_string_put(data->ptr, data->win, 10, 70, 0x00FF0000,
 		"Altitude : Up / Down");
 	mlx_string_put(data->ptr, data->win, 10, 100, 0x00FF0000,
-		"Translate map : Space");
+		"Change map projection : Space");
 }
 
 void	ft_draw(t_data *data)
