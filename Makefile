@@ -22,8 +22,7 @@ all : $(NAME)
 
 $(NAME) : $(OBJS) 
 	$(CC) $(CFLAGS) $(OBJS) $(MLXLIB) -o $(NAME)
-	rm -rf *.o
-	cd get_next_line && rm -rf *.o
+	make clean
 	
 %.o : %.c
 	$(CC) $(CFLAGS) -Imlx -c $< -o $@
