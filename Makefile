@@ -22,7 +22,6 @@ all : $(NAME)
 
 $(NAME) : $(OBJS) 
 	$(CC) $(CFLAGS) $(OBJS) $(MLXLIB) -o $(NAME)
-	make clean
 	
 %.o : %.c
 	$(CC) $(CFLAGS) -Imlx -c $< -o $@
